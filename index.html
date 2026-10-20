@@ -53,11 +53,29 @@
 <section class="section reveal" id="memories">
   <div class="section-kicker">OUR LITTLE TIME CAPSULE</div><h2>Moments I want to <span class="script">keep forever</span></h2>
   <p class="section-desc">each one gets its own little star.</p>
-  <div class="memory-grid">
-    <label class="memory-card"><input type="file" accept="image/*" data-photo="photo1"><div class="photo-placeholder" id="photo1"><span>＋</span><small>Add a favourite photo</small></div><p>♡ <span contenteditable="true">A memory I never want to forget</span></p></label>
-    <label class="memory-card"><input type="file" accept="image/*" data-photo="photo2"><div class="photo-placeholder" id="photo2"><span>＋</span><small>One of my favourite yous</small></div><p>♡ <span contenteditable="true">You make ordinary days magic</span></p></label>
-    <label class="memory-card"><input type="file" accept="image/*" data-photo="photo3"><div class="photo-placeholder" id="photo3"><span>＋</span><small>Another little forever</small></div><p>♡ <span contenteditable="true">And I would choose this again</span></p></label>
-  </div>
+ 
+<div class="memory-grid">
+  <label class="memory-card">
+    <div class="photo-placeholder" id="photo1">
+      <img src="P1.jpeg" alt="A favourite memory with Jhalak">
+    </div>
+    <p>♡ <span>A memory I never want to forget</span></p>
+  </label>
+
+  <label class="memory-card">
+    <div class="photo-placeholder" id="photo2">
+      <img src="P2.jpeg" alt="One of my favourite photos of Jhalak">
+    </div>
+    <p>♡ <span>You make ordinary days magic</span></p>
+  </label>
+
+  <label class="memory-card">
+    <div class="photo-placeholder" id="photo3">
+      <img src="P3.jpeg" alt="Another favourite memory">
+    </div>
+    <p>♡ <span>And I would choose this again</span></p>
+  </label>
+</div>
 </section>
 
 <section class="section reasons reveal" id="reasons">
@@ -86,7 +104,9 @@
   <div class="vinyl"><div class="vinyl-center">♡</div></div>
   <div class="music-copy"><div class="section-kicker">OUR LITTLE SOUNDTRACK</div><h2>A song that feels like <span class="script">you</span></h2>
     <label class="file-button">Pyar Ki Si<input type="file" id="audioFile" accept="audio/*"></label>
-    <audio id="audioPlayer" controls preload="none"></audio>
+<audio id="audioPlayer" controls preload="none">
+  <source src="Pyar%20Ki%20Si.mp3" type="audio/mpeg">
+</audio>
     <label class="url-label" for="audioUrl">if u wanna play something else, put da URL here</label><div class="audio-url-row"><input id="audioUrl" type="url" placeholder="https://example.com/song.mp3"><button class="secondary" id="loadUrl">Load</button></div>
   </div>
 </section>
