@@ -1,126 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090f27">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#090f27">
 <title>For Jhalak ✦</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head><body>
 <div class="sky" aria-hidden="true"><div class="stars"></div><div class="moon"></div><div class="shooting-star"></div></div>
-<nav class="nav">
-  <a class="brand" href="#home">✦ for Jhalak</a>
-  <button class="menu-toggle" aria-label="Open menu" id="menuToggle">☰</button>
-  <div class="nav-links" id="navLinks">
-    <a href="#letters">Letters</a><a href="#memories">Memories</a><a href="#reasons">Reasons</a><a href="#surprise">Surprise</a>
-  </div>
-</nav>
-
+<nav class="nav"><a class="brand" href="#home">✦ for Jhalak</a><button class="menu-toggle" aria-label="Open menu" id="menuToggle">☰</button><div class="nav-links" id="navLinks"><a href="#letters">Letters</a><a href="#memories">Memories</a><a href="#reasons">Reasons</a><a href="#constellation">Stars</a><a href="#surprise">Surprise</a></div></nav>
 <main>
-<section class="hero" id="home">
-  <div class="eyebrow"><span class="tiny-star">✧</span> NOVEMBER 17, 2026 <span class="tiny-star">✧</span></div>
-  <p class="script hello">For my favourite person</p>
-  <h1>Happy Birthday,<br><span>Jhalak</span><span class="heart"> ♡</span></h1>
-  <p class="subtitle">Meriii pyariii Jhalakkkk, this little universe is just for you.</p>
-  <div class="countdown" id="countdown" aria-live="polite"><div><b id="days">--</b><small>days</small></div><i>:</i><div><b id="hours">--</b><small>hours</small></div><i>:</i><div><b id="minutes">--</b><small>minutes</small></div><i>:</i><div><b id="seconds">--</b><small>seconds</small></div></div>
-  <p class="countdown-caption" id="countdown-caption">until your special day ✦</p>
-  <button class="primary" id="startBtn">Open your little universe <span>♡</span></button>
-  <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
-  <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-</section>
-
-<section class="intro reveal" id="intro">
-  <div class="section-kicker">A LITTLE NOTE FROM ME</div>
-  <h2 class="script">To meriii pyarii Jhalakkk</h2>
-  <p class="wide-copy">If I could gather every tiny thing that makes you special and turn it into stars, I think the whole sky would still ask for more. So I made you this reminder of how loved you are.</p>
-  <div class="signature"> worked my ass off for this xd <span>♥</span></div>
-</section>
-
-<section class="section reveal" id="letters">
-  <div class="section-kicker">SEALED WITH LOVE</div><h2>Little letters, <span class="script">just for you</span></h2>
-  <p class="section-desc">Tap an envelope. I hid a few words inside.</p>
-  <div class="letter-grid">
-    <button class="envelope" data-letter="happy"><span class="env-icon">✉</span><b>Open when you're happy</b><small>we'll make the moment last</small><span class="tap">tap to open ↗</span></button>
-    <button class="envelope" data-letter="sad"><span class="env-icon">♡</span><b>Open when you're sad</b><small>a little hug in words hehe</small><span class="tap">tap to open ↗</span></button>
-    <button class="envelope" data-letter="miss"><span class="env-icon">☾</span><b>Open when you miss me</b><small>look up at the same sky</small><span class="tap">tap to open ↗</span></button>
-  </div>
-</section>
-
-<section class="section reveal" id="memories">
-  <div class="section-kicker">OUR LITTLE TIME CAPSULE</div><h2>Moments I want to <span class="script">keep forever</span></h2>
-  <p class="section-desc">each one gets its own little star.</p>
- 
-<div class="memory-grid">
-  <label class="memory-card">
-    <div class="photo-placeholder" id="photo1">
-      <img src="P1.jpeg" alt="A favourite memory with Jhalak">
-    </div>
-    <p>♡ <span>A memory I never want to forget</span></p>
-  </label>
-
-  <label class="memory-card">
-    <div class="photo-placeholder" id="photo2">
-      <img src="P2.jpeg" alt="One of my favourite photos of Jhalak">
-    </div>
-    <p>♡ <span>You make ordinary days magic</span></p>
-  </label>
-
-  <label class="memory-card">
-    <div class="photo-placeholder" id="photo3">
-      <img src="P3.jpeg" alt="Another favourite memory">
-    </div>
-    <p>♡ <span>And I would choose this again</span></p>
-  </label>
-</div>
-</section>
-
-<section class="section reasons reveal" id="reasons">
-  <div class="section-kicker">A NON-EXHAUSTIVE LIST</div><h2>Reasons I love <span class="script">you</span></h2>
-  <p class="section-desc">A few reasons… though this page could never fit all of them.</p>
-  <div class="reason-box">
-    <div class="reason-number" id="reasonNumber">01 / 08</div>
-    <p id="reasonText">The way you make even the most ordinary day feel special.</p>
-    <div class="reason-controls"><button id="prevReason" aria-label="Previous reason">←</button><span class="dots" id="reasonDots"></span><button id="nextReason" aria-label="Next reason">→</button></div>
-  </div>
-</section>
-
-<section class="section surprise reveal" id="surprise">
-  <div class="section-kicker">ONE LAST THING…</div><h2>There's a little <span class="script">surprise</span></h2>
-  <p class="section-desc">A tiny constellation, made of all the things I wish for you.</p>
-  <button class="gift" id="giftBtn" aria-label="Open birthday surprise"><span>🎁</span><small>tap to unwrap</small></button>
-  <div class="surprise-message hidden" id="surpriseMessage">
-    <p class="script">Happy birthday, my Jhalak ♡</p>
-    <p>i hope is baar everything works out and we get to stay together forever. just 11 more years cutie</p>
-    <p class="signature">I’m so lucky I get to know you. <span>♥</span></p>
-    <button class="secondary" id="confettiBtn">Make a wish ✨</button>
-  </div>
-</section>
-
-<section class="music-panel reveal" id="music">
-  <div class="vinyl"><div class="vinyl-center">♡</div></div>
-  <div class="music-copy"><div class="section-kicker">OUR LITTLE SOUNDTRACK</div><h2>A song that feels like <span class="script">you</span></h2>
-    <label class="file-button">Pyar Ki Si<input type="file" id="audioFile" accept="audio/*"></label>
-<audio id="audioPlayer" controls preload="none">
-  <source src="Pyar%20Ki%20Si.mp3" type="audio/mpeg">
-</audio>
-    <label class="url-label" for="audioUrl">if u wanna play something else, put da URL here</label><div class="audio-url-row"><input id="audioUrl" type="url" placeholder="https://example.com/song.mp3"><button class="secondary" id="loadUrl">Load</button></div>
-  </div>
-</section>
-
-<section class="final-note reveal">
-  <span class="tiny-star">✧</span><p class="script">To the girl who makes my world brighter.</p>
-  <p>Happy Birthday, Meriii Pyariiii Jhalakkkk.</p><div class="big-heart">♡</div>
-  <small> under the same sky · 17.11.2026</small>
-</section>
-</main>
-
-<footer>THE SKY IS A LITTLE BRIGHTER WITH YOU IN IT <span>✦</span></footer>
-<div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close">×</button><div class="section-kicker">A LETTER FOR YOU</div><h2 class="script" id="modalTitle">For you ♡</h2><p id="modalText"></p><span class="signature">always cheering for you <span>♥</span></span></div></div>
-<div class="toast hidden" id="toast">A little wish for you ✨</div>
-<script src="script.js"></script>
-</body>
-</html>
+<section class="hero" id="home"><div class="eyebrow"><span class="tiny-star">✧</span> NOVEMBER 17, 2026 <span class="tiny-star">✧</span></div><p class="script hello">For my favourite person</p><h1>Happy Birthday,<br><span>Jhalak</span><span class="heart"> ♡</span></h1><p class="subtitle">Meriii pyariii Jhalakkkk, this little universe is just for you.</p>
+<div class="countdown" id="countdown" aria-live="polite"><div><b id="days">--</b><small>days</small></div><i>:</i><div><b id="hours">--</b><small>hours</small></div><i>:</i><div><b id="minutes">--</b><small>minutes</small></div><i>:</i><div><b id="seconds">--</b><small>seconds</small></div></div><p class="countdown-caption" id="countdown-caption">until your special day ✦</p><button class="primary" id="startBtn">Open your little universe <span>♡</span></button><div class="scroll-note">SCROLL A LITTLE <span>↓</span></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></section>
+<section class="intro reveal" id="intro"><div class="section-kicker">A LITTLE NOTE FROM ME</div><h2 class="script">To meriii pyarii Jhalakkk</h2><p class="wide-copy">If I could gather every tiny thing that makes you special and turn it into stars, I think the whole sky would still ask for more. So I made you this reminder of how loved you are.</p><div class="signature">worked my ass off for this xd <span>♥</span></div></section>
+<section class="section reveal" id="letters"><div class="section-kicker">SEALED WITH LOVE</div><h2>Little letters, <span class="script">just for you</span></h2><p class="section-desc">Tap an envelope. I hid a few words inside.</p><div class="letter-grid">
+<button class="envelope" data-letter="happy"><span class="env-icon">✉</span><b>Open when you're happy</b><small>we'll make the moment last</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="sad"><span class="env-icon">♡</span><b>Open when you're sad</b><small>a little hug in words hehe</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="miss"><span class="env-icon">☾</span><b>Open when you miss me</b><small>your ghonchu misses you too</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="reassurance"><span class="env-icon">🧿</span><b>Open when you need reassurance</b><small>a reminder from your ghonchu</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="sleep"><span class="env-icon">☾</span><b>Open when you can't sleep</b><small>a tiny late-night reminder</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="overthinking"><span class="env-icon">✧</span><b>Open when you're overthinking</b><small>one thing at a time, cutie</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="smile"><span class="env-icon">♡</span><b>Open when you need to smile</b><small>emergency happiness delivery</small><span class="tap">tap to open ↗</span></button>
+<button class="envelope" data-letter="random"><span class="env-icon">✉</span><b>Open on a random day</b><small>no occasion needed</small><span class="tap">tap to open ↗</span></button>
+</div></section>
+<section class="section reveal" id="memories"><div class="section-kicker">OUR LITTLE TIME CAPSULE</div><h2>Moments I want to <span class="script">keep forever</span></h2><p class="section-desc">each one gets its own little star.</p><div class="memory-grid">
+<label class="memory-card"><div class="photo-placeholder" id="photo1"><img src="P1.jpeg" alt="A favourite memory with Jhalak"></div><p>♡ <span>A memory I never want to forget</span></p></label>
+<label class="memory-card"><div class="photo-placeholder" id="photo2"><img src="P2.jpeg" alt="One of my favourite photos of Jhalak"></div><p>♡ <span>You make ordinary days magic</span></p></label>
+<label class="memory-card"><div class="photo-placeholder" id="photo3"><img src="P3.jpeg" alt="Another favourite memory"></div><p>♡ <span>And I would choose this again</span></p></label>
+</div></section>
+<section class="section reasons reveal" id="reasons"><div class="section-kicker">A NON-EXHAUSTIVE LIST</div><h2>Reasons I love <span class="script">you</span></h2><p class="section-desc">A few reasons… though this page could never fit all of them.</p><div class="reason-box"><div class="reason-number" id="reasonNumber">01 / 08</div><p id="reasonText">The way you make even the most ordinary day feel special.</p><div class="reason-controls"><button id="prevReason" aria-label="Previous reason">←</button><span class="dots" id="reasonDots"></span><button id="nextReason" aria-label="Next reason">→</button></div></div></section>
+<section class="section constellation-section reveal" id="constellation"><div class="section-kicker">A SKY FULL OF LITTLE REMINDERS</div><h2>Find your <span class="script">twenty stars</span></h2><p class="section-desc">Tap every star to reveal a tiny message from your ghonchu. A bigger star is waiting at the end. ♡</p><div class="star-progress"><span id="starProgress">0 / 20 stars opened</span><div class="progress-track"><div id="progressFill"></div></div></div><div class="constellation" id="constellationStars" aria-label="Twenty interactive stars"></div><button class="final-star locked" id="finalStar" disabled aria-label="Final birthday star"><span>✦</span><small>open all 20 stars first</small></button><div class="final-star-message hidden" id="finalStarMessage"><div class="final-glow">✦</div><p class="approved-message">CUTIIIEEEIEIEIEIE 😭🫶🏻 YOU ACTUALLY OPENED ALL THE STARS????? MERIII PYARIII JHALAKKKK, YOUR GHONCHU IS SO PROUD OF U, even though all u did was click stars. PLEASE 😭</p><p>but seriously, sweetie, i hope this little universe reminds u how special u are to me. i wish i could put into words everything i feel for u, but even twenty stars aren't enough to hold all of it. i'm so grateful i get to know u, laugh with u, make memories with u, and call u my babyyyyyyyy. 🧿🫶🏻</p><p>happy birthday, meri pyari Jhalak. i hope this next year brings u so many reasons to smile, and i hope i get to be there for as many of them as i can. i love you SO SO SO MUCHHHH. MWAHHHHHHHHHH MWAHHHHHHHHHH MWAHHHHHHHHHH 😭💗</p><p class="signature">♡ your ghonchu, always ♡</p></div></section>
+<section class="section surprise reveal" id="surprise"><div class="section-kicker">ONE LAST THING…</div><h2>There's a little <span class="script">surprise</span></h2><p class="section-desc">A tiny constellation, made of all the things I wish for you.</p><button class="gift" id="giftBtn" aria-label="Open birthday surprise"><span>🎁</span><small>tap to unwrap</small></button><div class="surprise-message hidden" id="surpriseMessage"><p class="script">Happy birthday, my Jhalak ♡</p><p>i hope is baar everything works out and we get to stay together forever. just 11 more years cutie</p><p class="signature">I’m so lucky I get to know you. <span>♥</span></p><button class="secondary" id="confettiBtn">Make a wish ✨</button></div></section>
+<section class="music-panel reveal" id="music"><div class="vinyl"><div class="vinyl-center">♡</div></div><div class="music-copy"><div class="section-kicker">OUR LITTLE SOUNDTRACK</div><h2>A song that feels like <span class="script">you</span></h2><label class="file-button">Pyar Ki Si<input type="file" id="audioFile" accept="audio/*"></label><audio id="audioPlayer" controls preload="none"><source src="Pyar%20Ki%20Si.mp3" type="audio/mpeg"></audio><label class="url-label" for="audioUrl">if u wanna play something else, put da URL here</label><div class="audio-url-row"><input id="audioUrl" type="url" placeholder="https://example.com/song.mp3"><button class="secondary" id="loadUrl">Load</button></div></div></section>
+<section class="final-note reveal"><span class="tiny-star">✧</span><p class="script">To the girl who makes my world brighter.</p><p>Happy Birthday, Meriii Pyariiii Jhalakkkk.</p><div class="big-heart">♡</div><small>under the same sky · 17.11.2026</small></section>
+</main><footer>THE SKY IS A LITTLE BRIGHTER WITH YOU IN IT <span>✦</span></footer>
+<div class="modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close">×</button><div class="section-kicker">A LETTER FOR YOU</div><h2 class="script" id="modalTitle">For you ♡</h2><p id="modalText"></p><span class="signature">always cheering for you <span>♥</span></span></div></div><div class="toast hidden" id="toast">A little wish for you ✨</div><script src="script.js"></script>
+</body></html>
