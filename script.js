@@ -25,26 +25,26 @@ $('giftBtn').addEventListener('click',()=>{$('surpriseMessage').classList.remove
 function showToast(message){$('toast').textContent=message;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2500)}
 function burst(count){const colors=['#f1a6c4','#f9dfeb','#c2cafa','#fff0d9','#a6c9ed'];for(let i=0;i<count;i++){const el=document.createElement('i');el.className='confetti';el.textContent=['✦','♡','✧','·'][Math.floor(Math.random()*4)];el.style.left=Math.random()*100+'vw';el.style.color=colors[Math.floor(Math.random()*colors.length)];el.style.fontSize=(10+Math.random()*18)+'px';el.style.animationDuration=(2+Math.random()*3)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),5200)}}
 const starMessages=[
-'CUTIIIEEEEE 😭😭 how are u literally so adorable all the time, like hello??? who gave u permission to be this cuteeeee 🤏🏻💗',
+'CUTIIIEEEEE 😭😭 TUMM ITNIII PERFIEEEE KAISEEEE HOOOOOO IMMMM FLABBERGASTEDD EVERYYYDAYYY II SEEE YOUUUUU 🤏🏻💗',
 'meri pyari Jhalakkk 🧿🫶🏻 i could listen to u yap about literally ANYTHING and still want u to keep talkingggg 😭',
-'GHONCHUUUU 😭🤏🏻 do u even realise how happy the tiniest things u do make me??? LIKE HOW AM I SUPPOSED TO ACT NORMAL ABOUT U 💗',
-'my babyyyyyyyy 🫶🏻 i genuinely miss u even when we’ve literally JUST stopped talking, this is getting embarrassing for me personally 😭💗',
-'bhonduuuuu 😭 i love our little conversations, our random laughs, and just being around u. i wish i could pause those moments sometimes 🧿💗',
-'sweeetieieieieie 😭🫶🏻 in case nobody has told u today, YOUR GHONCHU IS SO SO SO PROUD OF U AND LOVES U A WHOLE LOTTTT 💗',
-'HOW ARE U THIS CUTE CUTIeee 😭🤏🏻 like genuinely explain urself rn 💗',
+'meriii noniiii do u even realise how happy the tiniest things u do make me??? LIKE HOW AM I SUPPOSED TO ACT NORMAL ABOUT YOUUUU',
+'my babyyyyyyyy i genuinely miss u even when we’re probably on a meet right now or youre recording your reaction to this',
+'bhonduuuuu i love our little conversations, our random laughs, and just being around u. i wish i could pause or relive days like 15 oct and 29 oct',
+'sweeetieieieieie in case nobody has told u today, TUMHARA GHONCHU IS SO SO SO PROUD OF U AND LOVES YOUU SOSOSOSOSOOS MUCHHH 💗',
+'HOW ARE U THIS ADOREABLE CUTIEEIEIEI, like genuinely explain urself rn ',
 'every time ur name pops up on my screen i get SO EXCITEDDD 😭🫶🏻',
 'sometimes i just wanna look at u and forget whatever i was about to say 😭💗',
-'i need one of ur hugs rn. actually no, i need approximately a million of them 🫂💗',
-'ur laugh is so precious to meeeee 😭 i wanna hear it a thousand more times 🫶🏻',
-'never stop being ur random little self, bhonduuu 😭 that’s one of my favourite things about u 💗',
+'i need one of ur hugs rn. actually no, i need millions of them ',
+'ur laugh is so precious to meeeee i wanna hear it infinitely more times 🫶🏻',
+'never stop being ur random little self, bhonduuu that’s one of my favourite things about u 💗',
 'u make me feel so comfortable being myself and i hope u know how much that means to me 🧿🫶🏻',
-'school is SO much better when i get to see u. why can’t every day have more jhalak time 😭🤏🏻',
+'school is SO much better when i get to see u. why can’t every day have more jhalak time- 😭🤏🏻',
 'i notice the little ways u care about people, sweetie. those things matter more than u think 💗',
 'i hope u always remember how capable u are, my babyyyy. i’m rooting for u ALWAYS 🫶🏻',
 'our tiny conversations and stupid jokes mean so much more to me than u probably realise 😭💗',
-'if missing u was a subject i’d have topped the entire school by now, no competition 😭',
-' there’s only one u in this entire universe and somehow i got lucky enough to know u 🧿💗',
-'MERIII PYARIII JHALAKKKK 😭🫶🏻 I LOVE YOU SO SO SO MUCHHHH. okay that’s the star. go drink water now cutie 🤏🏻💗'
+'if missing u was a subject i’d have topped the entire world by now, no one ever loving you more than me',
+'8 billion people in this world and im so lucky to have met you and made you my wifeyyyyy 🧿💗',
+'MERIII PYARIII JHALAKKKK 😭🫶🏻 I LOVE YOU SO SO SO MUCHHHH. okay that’s the biggg star unlocked. go drink water now cutie 🤏🏻💗'
 ];
 const openedStars=new Set();const starContainer=$('constellationStars');
 starMessages.forEach((message,index)=>{const button=document.createElement('button');button.type='button';button.className='constellation-star';button.style.setProperty('--star-delay',`${(index%7)*.18}s`);button.setAttribute('aria-label',`Open star ${index+1}`);button.innerHTML=`<span>✦</span><small>${String(index+1).padStart(2,'0')}</small>`;button.addEventListener('click',()=>{if(openedStars.has(index)){showToast('you already opened this little star, cutie 💗');return}openedStars.add(index);button.classList.add('opened');button.setAttribute('aria-label',`Star ${index+1} opened`);$('starProgress').textContent=`${openedStars.size} / 20 stars opened`;$('progressFill').style.width=`${openedStars.size/20*100}%`;burst(5);openStarMessage(index,message);if(openedStars.size===20){$('finalStar').disabled=false;$('finalStar').classList.remove('locked');$('finalStar').classList.add('unlocked');$('finalStar').querySelector('small').textContent='your final birthday star is ready ♡';showToast('ALL TWENTY STARS!!! your big star is ready, cutie 💗');burst(35)}});starContainer.appendChild(button)});
